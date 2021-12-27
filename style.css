@@ -1,0 +1,332 @@
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+	font-family:Arial, sans-serif;
+}
+
+.container {
+	position:relative;
+	width:100%;
+	height:100vh;
+	background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+.one {
+	height:20%;
+	width:35%;
+}
+
+.two {
+	position:absolute;
+	top:0;
+	height:100%;
+	width:65%;
+	left:35%;
+	background-image:url(img/image_summer.png);
+	background-size: cover;
+}
+
+.three {
+	height:80%;
+	width:35%;
+	display:relative;
+
+}
+/* ------NAVIGATION BAR BLOCK -------- */
+
+.navbar {
+	display:flex;
+	width:100%;
+	height:150px;
+	align-items: center;
+	justify-content:space-between;
+	padding: 0 20px;
+}
+
+.navbar ul {
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+}
+
+.navbar ul li {
+	display:inline;
+	padding: 0px 10px;
+}
+
+.navbar ul li a {
+	text-decoration:none;
+	color: #6A707B;
+	font-size:14px;
+}
+
+.navbar ul li a:hover {
+	color: #000000;
+}
+
+.logo img {
+	height:90%;
+	width:auto;
+	padding-bottom:12px;
+}
+
+/* ------SUBSRIBE PART------ */
+
+.three-inner-container {
+	position:relative;
+	top:15%;
+}
+
+.subscribe {
+	display:flex;
+	flex-direction:column;
+	margin: auto;
+	width:70%;
+	item-align:center;
+	height: 300px;
+
+}
+
+.subscribe img {
+	height:auto;
+	width:44px;
+	margin:20px;
+}
+
+/* ------TEXT------ */
+
+h1 {
+	font-family:Georgia, serif;
+	color: #131821;
+	font-size:1.5em;
+	text-align:left;
+	margin: 10px 0 20px 0;
+	padding: 10px;
+}
+
+.text-subscribe {
+	margin:20px 0;
+	color:#6A707B;
+	padding:10px;
+}
+
+a {
+	text-decoration:none;
+	color: #6A707B;
+	}
+	
+a:hover {
+	text-decoration:none;
+	color: #131821;
+	}
+
+.error {
+	color: #131821;
+	font-size:10px;
+	padding:0 10px 10px 20px;
+	margin:0;
+}
+
+.php-error-hide {
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes php-error-hide {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+/* ------FORM ELEMENTS------ */
+
+form {
+	padding:0px;
+	padding-bottom:20px;
+}
+
+.input-email {
+	display: flex;
+	width:135%;
+	height:50px;
+	margin: 20px auto;
+
+}
+
+#email-input {
+	text-align: left;
+	padding:20px;
+	width: 100%;
+	height:50px;
+    border: 1px solid #E3E3E4;
+    border-left-color: #4066A5;
+	border-left-width: 5px;
+	border-right-width:0px;
+}
+
+input::placeholder {
+	color:#6a707b;
+}
+
+input:focus::placeholder {
+	color:#131821;
+}
+
+#email-btn {
+	width:50px;
+	height:50px;
+	background-color: #ffffff;
+	color: #6A707B;
+	font-size:22px;
+	border: 1px solid #E3E3E4;
+	border-left-width:0px;
+}
+
+#email-btn:disabled {
+	color:#E3E3E4;
+	font-size:22px;
+}
+
+.ckbx {
+	display:flex;
+	padding:0 10px;
+}
+
+
+.ckbx p {
+	margin:2px 5px;
+}
+
+.ckbx a {
+	text-decoration:underline;
+}
+
+#email-chekbox {
+	width:20px;
+	height:20px;
+	accent-color:#4066A5;
+}
+
+
+/* ------ICONS------ */
+
+.iconlist {
+	position:relative;
+	width:60%;
+	bottom:0px;
+	border-top:1px solid #E3E3E4;
+	margin:auto;
+	padding-top:20px;
+}
+
+.iconlist ul {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+
+.iconlist li {
+	display:inline;
+	padding:10px;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-youtube {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border: 1px solid #E3E3E4;
+	border-radius: 50px;
+	color: #E3E3E4;
+}
+
+.fa-facebook-f:hover {
+	color:#4267B2;
+	border-color:#4267B2;
+}
+
+.fa-twitter:hover {
+	color:#1DA1F2;
+	border-color: #1DA1F2;
+}
+
+.fa-instagram:hover {
+	color:#C13584;
+	border-color: #C13584;
+}
+
+.fa-youtube:hover {
+	color:#FF0000;
+	border-color: #FF0000;
+}
+
+.fa-facebook-f:active {
+	color:#2F4A80;
+	border-color:#2F4A80;
+}
+
+.fa-twitter:active {
+	color:#177FBF;
+	border-color: #177FBF;
+}
+
+.fa-instagram:active {
+	color:#8F2762;
+	border-color: #8F2762;
+}
+
+.fa-youtube:active {
+	color:#CC0000;
+	border-color: #CC0000;
+}
+
+
+
+/* ------MEDIA QUERY------ */
+
+@media only screen and (max-width: 768px) {
+
+.one {
+	height:10vh;
+	width:100%;
+}
+
+.navbar {
+	height:10vh;
+}
+
+.two {
+	display:none;
+}
+
+.three {
+	width:100%;
+	height:90vh;
+	background-image:url(img/image_summer.png);
+	background-size: cover;
+}
+
+.three-inner-container {
+	background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+	width: 80%;
+	margin:auto;
+	padding:20px 0;
+}
+
+.input-email {
+	width:100%;
+}
+
+.subscribe {
+	margin:auto;
+	padding:20px;
+	width:90%;
+}
+
+}
